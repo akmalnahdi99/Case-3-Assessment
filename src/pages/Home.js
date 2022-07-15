@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 export default function Home() {
     return (
         <Layout>
-            <SlideShow />
+            <SlideShow/>
             <Container>
                     <div className="row">
                         <HomeBody />

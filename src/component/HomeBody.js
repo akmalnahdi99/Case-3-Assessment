@@ -1,108 +1,107 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Gym from '../assets/imgs/gym.svg';
-import Pool from '../assets/imgs/swimming-pool.svg';
-import Restaurant from '../assets/imgs/cutlery.svg';
-import Auditorium from '../assets/imgs/auditorium.svg';
-import Bar from '../assets/imgs/cocktail.svg';
-import Lounge from '../assets/imgs/lounge.svg'
+import sigra from '../assets/imgs/sigra.JPG';
+import xl7 from '../assets/imgs/xl7.jpg';
+import greysigra from '../assets/imgs/greysigra.jpg';
+
 
 export default function HomeBody() {
     return (
         <>
-            <div className='row pe-0'>
-                <div className='col-md-8 col-xs-12'>
+            <div className='row mt-5 pe-0 text-center'>
+            <h1 className='display-2'>Available For Sale</h1>
+                <div className='col-md-4 col-xs-12'>
                     <div className='col-12'>
+                        <Link to='/product1' className='product'>
                         <div className='ibox minhigh350px mt-3'>
                             <div className='ibox-content border paddingtop minhigh350px'>
-                                <h2><strong>Sample Hotel</strong></h2>
-                                <span>ILorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing </span>
-                                <br />
-                                <br />
-                                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-12'>
-                        <div className='ibox dash-box mt-3 mb-4'>
-                            <div className='ibox-content pt-0'>
-                                <h2 className='p-3 mb-3'><strong>Check Out Our Facilities</strong></h2>
-                                <div className='row text-center'>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/gym' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Gym} width='24px' alt='' />
-                                            <br /> Gym
-                                        </Link>
-                                    </div>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/swimming-pool' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Pool} width='24px' alt='' />
-                                            <br /> Swimming Pool
-                                        </Link>
-                                    </div>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/restaurant' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Restaurant} width='24px' alt='' />
-                                            <br /> Restaurant
-                                        </Link>
-                                    </div>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/auditorium' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Auditorium} width='24px' alt='' />
-                                            <br /> Auditorium
-                                        </Link>
-                                    </div>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/bar' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Bar} width='24px' alt='' />
-                                            <br /> Bar
-                                        </Link>
-                                    </div>
-                                    <div className='col-md-4 col-xs-6 p-2 mb-2'>
-                                        <Link to='/facilities/lounge' className='btn btn-default btn-block px-1 btn-dashboardicon text-truncate w-100'>
-                                            <img src={Lounge} width='24px' alt='' />
-                                            <br /> Lounge
-                                        </Link>
-                                    </div>
+                                <div className='row justify-content-center'>
+                                <h1>Suzuki XL7 2020</h1>
+                                <img src={xl7} width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
-                <div className='col-md-4 col-xs-12 mt-3 mb-4'>
-                    <div className='ibox h-100 w-100'>
-                        <div className='ibox-content paddingtop'>
-                            <h2><strong>What's New!</strong></h2>
-                            <ul className='home-body-link'>
-                                <li className='mb-3'>
-                                    <Link to='/transportation' style={{ textDecoration: 'none' }}>
-                                        Transportation Booking
-                                    </Link>
-                                </li>
-                                <li className='mb-3'>
-                                    <Link to='/feedback' style={{ textDecoration: 'none' }}>
-                                        Feedback Form
-                                    </Link>
-                                </li>
-                                <li className='mb-3'>
-                                    <Link to='/room-cleaning' style={{ textDecoration: 'none' }}>
-                                        Room Cleaning Booking
-                                    </Link>
-                                </li>
-                                <li className='mb-3'>
-                                    <Link to='/amenities-request' style={{ textDecoration: 'none' }}>
-                                        Room Amenities Request
-                                    </Link>
-                                </li>
-                            </ul>
+                <div className='col-md-4 col-xs-12'>
+                    <div className='col-12'>
+                        <Link to='/product2' className='product'>
+                        <div className='ibox minhigh350px mt-3'>
+                            <div className='ibox-content border paddingtop minhigh350px'>
+                                <div className='row justify-content-center'>
+                                <h1>Daihatsu Sigra R 2021</h1>
+                                <img src={sigra} width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
+                                </div>
+                            </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
-            </div>
-            <div className='row justify-content-center'>
-                <div className='col-md-2 col-xs-6'>
-                    <span className='text-center'>Wifi Code: 12345678</span>
+                <div className='col-md-4 col-xs-12'>
+                    <div className='col-12'>
+                        <Link to='/product3' className='product'>
+                        <div className='ibox minhigh350px mt-3'>
+                            <div className='ibox-content border paddingtop minhigh350px'>
+                                <div className='row justify-content-center'>
+                                <h1>Daihatsu Sigra R 2021</h1>
+                                <img src={greysigra} width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
                 </div>
+                <div className='col-md-4 col-xs-12'>
+                    <div className='col-12'>
+                        <Link to='/product4' className='product'>
+                        <div className='ibox minhigh350px mt-3'>
+                            <div className='ibox-content border paddingtop minhigh350px'>
+                                <div className='row justify-content-center'>
+                                <h1>Daihatsu Ayla 2021</h1>
+                                <img src='https://apollo-singapore.akamaized.net/v1/files/mhm5t527yvet2-ID/image;s=1080x1080' width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+                </div>
+                <div className='col-md-4 col-xs-12'>
+                    <div className='col-12'>
+                        <Link to='/product5' className='product'>
+                        <div className='ibox minhigh350px mt-3'>
+                            <div className='ibox-content border paddingtop minhigh350px'>
+                                <div className='row justify-content-center'>
+                                <h1>Suzuki Carry 2021</h1>
+                                <img src='https://apollo-singapore.akamaized.net/v1/files/slx33hizyqft2-ID/image;s=1080x1080' width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+                </div>
+                <div className='col-md-4 col-xs-12'>
+                    <div className='col-12'>
+                        <Link to='/product6' className='product'>
+                        <div className='ibox minhigh350px mt-3'>
+                            <div className='ibox-content border paddingtop minhigh350px'>
+                                <div className='row justify-content-center'>
+                                <h1>Toyota Agya 2021</h1>
+                                <img src='https://apollo-singapore.akamaized.net/v1/files/n9l5fddieyno1-ID/image;s=1080x1080' width='300px'/>
+                                <button className='btn btn-primary mt-3'><span>View Details</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+                </div>
+                
+                
             </div>
         </>
 

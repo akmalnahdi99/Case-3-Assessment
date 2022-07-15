@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import Logo from '../assets/imgs/logo.png'
+import Logo from '../assets/imgs/logo.jpg'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+
 
 
 export default function Header() {
@@ -20,20 +23,28 @@ export default function Header() {
   }
 
   return (
-    <header className="header row">
+    <>
+    <header className="header row p-2">
       <div className="navbar-header col-9">
         <div className="navbar-brand float-left mt-2">
           <Link to='/'>
-            <img src={Logo} width='120px' alt='' /> <br />
+            <img className="img-fluid" src={Logo} width='150px' alt='' /> <br />
           </Link>
           {error && <span className='text-danger'>{error}</span>}
         </div>
       </div>
-      <ul className="nav navbar-right col-3 justify-content-end align-items-center">
-        <li>
-          <button className="p-0 bg-transparent" style={{ textDecoration: "none", border: "none" }} onClick={handleLogout}><span>Log Out</span></button>
-        </li>
-      </ul>
+      <div className="nav navbar-right col-3 justify-content-end align-items-center">
+        <Link to='/about'>
+          <button className="headerb1"><span>About Us</span></button>
+          </Link>
+      </div>
     </header>
+    <div className="rline p-1" style={{ backgroundColor: "#ca1f05"}}>
+
+    </div>
+    <div className="rline p-1" style={{ backgroundColor: "#B2B2B2"}}>
+
+    </div>
+    </>
   );
 }

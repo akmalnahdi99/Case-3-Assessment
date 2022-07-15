@@ -12,8 +12,15 @@ export default function Layout({children}) {
         <div className="border-bottom nav-header">
           <Header />
         </div>
-        <Navigation />
           {children}
+          
+        <div className="rline p-1" style={{ backgroundColor: "#B2B2B2"}}>
+
+        </div>
+        <div className="rline p-1" style={{ backgroundColor: "#ca1f05"}}>
+
+        </div>
+        
         <Footer />
       </div>
     </React.Fragment>

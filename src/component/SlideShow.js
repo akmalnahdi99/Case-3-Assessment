@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import pool from '../assets/imgs/pool.jpg';
 import transport from '../assets/imgs/transport.jpg';
-import restaurant from '../assets/imgs/restaurant.jpg';
+import veloz from '../assets/imgs/veloz.jpg';
 
 export default function SlideShow() {
     return (
@@ -10,14 +10,14 @@ export default function SlideShow() {
         <Carousel.Item>
             <img
                 className=" w-100"
-                src={restaurant}
+                src={pool}
                 alt="Third slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="w-100"
-                src={pool}
+                src={veloz}
                 alt="First slide"
             />
         </Carousel.Item>

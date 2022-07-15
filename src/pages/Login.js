@@ -29,7 +29,7 @@ export default function Login() {
                 <div className="col-12 middle-box text-center animated fadeInDown">
                     <div>
                     </div>
-                    <h3>Welcome to Sample Hotel</h3>
+                    <h3>Welcome to Auto Prestige</h3>
                     <p className="font-light">Please Log In Your Account</p>
                     {error && <p className="text-danger">{error}</p>}
                     <form className="m-t" onSubmit={handleSubmit}>
